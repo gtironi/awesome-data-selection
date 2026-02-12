@@ -6,12 +6,19 @@ A curated list of papers and resources on data selection for machine learning.
 
 ## Contents
 
-- [Active Learning](#active-learning)
-- [Core-set Selection](#core-set-selection)
-- [Curriculum Learning](#curriculum-learning)
-- [Online Batch Selection](#online-batch-selection)
-- [Rho-Loss Based](#rho-loss-based)
-- [Importance Sampling](#importance-sampling)
+- [Introduction](#introduction)
+- [Methods](#methods)
+  - [Active Learning](#active-learning)
+  - [Core-set Selection](#core-set-selection)
+  - [Curriculum Learning](#curriculum-learning)
+  - [Online Batch Selection](#online-batch-selection)
+  - [Rho-Loss Based](#rho-loss-based)
+  - [Importance Sampling](#importance-sampling)
+- [Papers](#papers)
+  - [2024 – 2022](#2024--2022)
+  - [2020 – 2022](#2020--2022)
+  - [2020 – 2018](#2020--2018)
+  - [2018 <](#2018-)
 
 ---
 
@@ -49,7 +56,7 @@ Bayesian approaches model uncertainty in loss contributions, providing probabili
 
 ---
 
-# Methods (20-word descriptions)
+# Methods
 
 ### Active Learning
 Selects the most informative unlabeled samples for annotation, minimizing labeling cost while maximizing expected model performance improvement.
