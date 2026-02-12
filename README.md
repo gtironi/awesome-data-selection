@@ -75,52 +75,81 @@ Samples training data proportionally to gradient magnitude or variance contribut
 
 ## 2024 – 2022
 
-### Data Pruning via Gradient Signal Preservation (2023)
-Proposes selecting samples that preserve the global gradient direction of the full dataset. Demonstrates significant dataset reduction without major performance loss in deep networks.
+### Most Influential Subset Selection: Challenges, Promises, and Beyond (2024)
+Comprehensive analysis of approaches to identify the most influential subsets of training data. Examines failure modes of influence-based greedy heuristics and demonstrates the effectiveness of adaptive algorithms that capture sample interactions.
 
-### Efficient Data Selection for Large Language Models (2023)
-Introduces scalable filtering strategies for LLM pretraining using perplexity and loss-based scoring. Shows compute-efficient pretraining with minimal degradation.
+[📄 PDF Anotado](annotated_papers/(2024)%20most%20influential%20subset%20selection:%20challenges,%20promises,%20and%20beyond.pdf)
 
-### Dataset Distillation by Matching Training Trajectories (2022)
-Optimizes synthetic subsets by aligning full training trajectories. Demonstrates strong compression of datasets into small synthetic coresets.
+### Towards Accelerated Model Training via Bayesian Data Selection (2023)
+Proposes Bayesian approaches to model uncertainty in loss contributions, providing probabilistic interpretations of sample reliability for principled filtering under noise.
+
+[📄 PDF Anotado](annotated_papers/(2023)%20towards%20accelerated%20model%20training%20via%20bayesian.pdf)
+
+### (RhoLoss) Prioritized Training on Points that are Learnable, Worth Learning, and Not Yet Learnt (2022)
+Uses robust loss functions (rho-loss) to identify noisy, harmful, or outlier samples. Analyzes sample-wise loss curvature to downweight or remove detrimental data points.
+
+[📄 PDF Anotado](annotated_papers/(2022)%20(rholoss)%20prioritized%20training%20on%20points%20that.pdf)
 
 ---
 
 ## 2020 – 2022
 
-### Forgetting Events in Deep Learning (Toneva et al., 2019)
-Analyzes how often samples are forgotten during training. Shows that frequently forgotten samples are more informative and can guide pruning strategies.
+### Coresets via Bilevel Optimization for Continual Learning and Streaming (2020)
+Identifies representative subsets of labeled datasets using geometric coverage or diversity to maintain performance with fewer samples, optimized via bilevel optimization for continual learning scenarios.
 
-### Data Shapley: Equitable Valuation of Data (2019)
-Applies Shapley value concepts to quantify each sample’s contribution to model performance. Establishes principled foundations for data valuation and removal.
+[📄 PDF Anotado](annotated_papers/(2020)%20coresets%20via%20bilevel%20optimization%20for%20continual%20learning%20and%20streaming.pdf)
 
-### GradMatch: Gradient Matching based Data Subset Selection (2021)
-Selects subsets by minimizing gradient difference between full and reduced datasets. Provides scalable subset selection with theoretical grounding.
+### Selection via Proxy: Efficient Data Selection for Deep Learning (2020)
+Uses smaller or cheaper surrogate models to approximate sample importance. These proxies estimate influence, difficulty, or gradient impact before expensive large-scale training.
+
+[📄 PDF Anotado](annotated_papers/(2020)%20selection%20via%20proxy.pdf)
+
+### Accelerating Deep Learning by Focusing on the Biggest Losers (2019)
+Dynamically reweights or resamples training examples during optimization based on loss, gradients, or uncertainty, prioritizing high-loss samples to improve convergence speed.
+
+[📄 PDF Anotado](annotated_papers/(2019)%20accelerating%20deep%20learning%20by%20focusing%20on%20the%20b.pdf)
+
+### Not All Samples Are Created Equal: Deep Learning with Importance Sampling (2019)
+Samples training data proportionally to gradient magnitude or variance contribution to improve stochastic optimization efficiency, demonstrating that not all samples contribute equally to learning.
+
+[📄 PDF Anotado](annotated_papers/(2019)%20not%20all%20samples%20are%20created%20equal.pdf)
 
 ---
 
 ## 2020 – 2018
 
-### Core-Set Approach for Active Learning (Sener & Savarese, 2018)
-Formulates active learning as a core-set problem in feature space. Uses k-center approximation to select diverse and representative samples.
+### Coresets via Bilevel Optimization for Continual Learning and Streaming (2020)
+Identifies representative subsets of labeled datasets using geometric coverage or diversity to maintain performance with fewer samples, optimized via bilevel optimization for continual learning scenarios.
 
-### Curriculum Learning (Bengio et al., 2009 – revived in deep era)
-Introduces structured training progression from easy to hard samples. Shows faster convergence and improved generalization.
+[📄 PDF Anotado](annotated_papers/(2020)%20coresets%20via%20bilevel%20optimization%20for%20continual%20learning%20and%20streaming.pdf)
 
-### Online Batch Selection for Faster Training (2018)
-Prioritizes high-loss samples dynamically during training. Demonstrates improved convergence speed in deep networks.
+### Selection via Proxy: Efficient Data Selection for Deep Learning (2020)
+Uses smaller or cheaper surrogate models to approximate sample importance. These proxies estimate influence, difficulty, or gradient impact before expensive large-scale training.
+
+[📄 PDF Anotado](annotated_papers/(2020)%20selection%20via%20proxy.pdf)
+
+### Accelerating Deep Learning by Focusing on the Biggest Losers (2019)
+Dynamically reweights or resamples training examples during optimization based on loss, gradients, or uncertainty, prioritizing high-loss samples to improve convergence speed.
+
+[📄 PDF Anotado](annotated_papers/(2019)%20accelerating%20deep%20learning%20by%20focusing%20on%20the%20b.pdf)
+
+### Not All Samples Are Created Equal: Deep Learning with Importance Sampling (2019)
+Samples training data proportionally to gradient magnitude or variance contribution to improve stochastic optimization efficiency, demonstrating that not all samples contribute equally to learning.
+
+[📄 PDF Anotado](annotated_papers/(2019)%20not%20all%20samples%20are%20created%20equal.pdf)
 
 ---
 
-## 2018 and Earlier
+## 2018 <
 
-### Importance Sampling for Stochastic Gradient Descent (Needell et al., 2014)
-Analyzes variance reduction through non-uniform sampling. Provides theoretical guarantees for faster convergence in SGD.
+### Online Batch Selection for Faster Training of Neural Networks (2016)
+Prioritizes high-loss samples dynamically during training. Demonstrates improved convergence speed in deep networks through intelligent batch selection strategies.
 
-### Self-Paced Learning (Kumar et al., 2010)
-Learns curriculum automatically by progressively incorporating harder samples. Bridges optimization and curriculum strategies.
+[📄 PDF Anotado](annotated_papers/(2016)%20online%20batch%20selection%20for%20faster%20training%20of.pdf)
 
-### Robust Loss Functions for Noisy Labels (Various Early Works)
-Introduces alternative loss functions resilient to mislabeled data. Forms the foundation for modern rho-loss and robust training methods.
+### Curriculum Learning (Bengio et al., 2009)
+Introduces structured training progression from easy to hard samples. Shows faster convergence and improved generalization by organizing examples from easier to harder, improving optimization stability.
+
+[📄 PDF Anotado](annotated_papers/(2009)%20curriculum%20learning.pdf)
 
 ---
